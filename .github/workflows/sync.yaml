@@ -23,7 +23,7 @@ jobs:
           GIT_URL: https://github.com/npm/cli
       - name: Generate SUMMARY
         env:
-          SRC_FOLDER: npm/doc
+          SRC_FOLDER: npm/docs/content
           GITBOOK_TITLE: "[NPM 英文文档](https://github.com/npm/cli)"
         run: |
           set -x
@@ -31,7 +31,7 @@ jobs:
           cp -a .github/workflows/gitbook.yaml ${SRC_FOLDER}/.github/workflows/
           cp book.json ${SRC_FOLDER}
           cd ${SRC_FOLDER}
-          cp files/package.json.md README.md
+          cp configuring-npm/package-json.md README.md
           npm init -f
           npm install gitbook-summary
           npx book sm -t "${GITBOOK_TITLE}" -i node_modules
@@ -46,7 +46,7 @@ jobs:
           PCIT_GIT_TOKEN: ${{ secrets.PCIT_GIT_TOKEN }}
           PCIT_GIT_URL: github.com/${{ github.repository }}
           PCIT_KEEP_HISTORY: "1"
-          PCIT_LOCAL_DIR: npm/doc
+          PCIT_LOCAL_DIR: npm/docs/content
           PCIT_MESSAGE: Sync from npm/cli by PCIT ${{ github.sha }}
           PCIT_TARGET_BRANCH: master
           PCIT_USERNAME: khs1994
