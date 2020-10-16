@@ -80,4 +80,5 @@
   * [Scope](using-npm/scope.md)
   * [Scripts](using-npm/scripts.md)
   * [Semver](using-npm/semver.md)
+  * [Workspaces](using-npm/workspaces.md)
 * [package.json](README.md)
