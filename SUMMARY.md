@@ -6,7 +6,6 @@
   * [Npm Audit](cli-commands/npm-audit.md)
   * [Npm Bin](cli-commands/npm-bin.md)
   * [Npm Bugs](cli-commands/npm-bugs.md)
-  * [Npm Bundle](cli-commands/npm-bundle.md)
   * [Npm Cache](cli-commands/npm-cache.md)
   * [Npm Ci](cli-commands/npm-ci.md)
   * [Npm Completion](cli-commands/npm-completion.md)
