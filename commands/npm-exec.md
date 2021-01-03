@@ -16,9 +16,11 @@ npx <pkg>[@<specifier>] [args...]
 npx -p <pkg>[@<specifier>] <cmd> [args...]
 npx -c '<cmd> [args...]'
 npx -p <pkg>[@<specifier>] -c '<cmd> [args...]'
+Run without --call or positional args to open interactive subshell
 
 alias: npm x, npx
 
+common options:
 --package=<pkg> (may be specified multiple times)
 -p is a shorthand for --package only when using npx executable
 -c <cmd> --call=<cmd> (may not be mixed with positional arguments)
@@ -30,9 +32,14 @@ This command allows you to run an arbitrary command from an npm package
 (either one installed locally, or fetched remotely), in a similar context
 as running it via `npm run`.
 
-Whatever packages are specified by the `--package` or `-p` option will be
+Run without positional arguments or `--call`, this allows you to
+interactively run commands in the same sort of shell environment that
+`package.json` scripts are run.  Interactive mode is not supported in CI
+environments when standard input is a TTY, to prevent hangs.
+
+Whatever packages are specified by the `--package` option will be
 provided in the `PATH` of the executed command, along with any locally
-installed package executables.  The `--package` or `-p` option may be
+installed package executables.  The `--package` option may be
 specified multiple times, to execute the supplied command in an environment
 where all specified packages are available.
 
@@ -48,13 +55,14 @@ only be considered a match if they have the exact same name and version as
 the local dependency.
 
 If no `-c` or `--call` option is provided, then the positional arguments
-are used to generate the command string.  If no `-p` or `--package` options
+are used to generate the command string.  If no `--package` options
 are provided, then npm will attempt to determine the executable name from
 the package specifier provided as the first positional argument according
 to the following heuristic:
 
 - If the package has a single entry in its `bin` field in `package.json`,
-  then that command will be used.
+  or if all entries are aliases of the same command, then that command
+  will be used.
 - If the package has multiple `bin` entries, and one of them matches the
   unscoped portion of the `name` field, then that command will be used.
 - If this does not result in exactly one option (either because there are
