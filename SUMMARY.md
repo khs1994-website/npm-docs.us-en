@@ -66,11 +66,10 @@
 - Configuring Npm
   * [Folders](configuring-npm/folders.md)
   * [Install](configuring-npm/install.md)
+  * [npm-shrinkwrap.json](configuring-npm/npm-shrinkwrap-json.md)
   * [Npmrc](configuring-npm/npmrc.md)
   * [package.json](configuring-npm/package-json.md)
   * [package-lock.json](configuring-npm/package-lock-json.md)
-  * [Package Locks](configuring-npm/package-locks.md)
-  * [shrinkwrap.json](configuring-npm/shrinkwrap-json.md)
 - Using Npm
   * [Config](using-npm/config.md)
   * [Developers](using-npm/developers.md)
