@@ -20,6 +20,7 @@
   * [Npm Exec](commands/npm-exec.md)
   * [Npm Explain](commands/npm-explain.md)
   * [Npm Explore](commands/npm-explore.md)
+  * [Npm Find Dupes](commands/npm-find-dupes.md)
   * [Npm Fund](commands/npm-fund.md)
   * [Npm Help Search](commands/npm-help-search.md)
   * [Npm Help](commands/npm-help.md)
