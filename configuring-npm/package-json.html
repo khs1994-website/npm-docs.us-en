@@ -1,0 +1,2091 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>package.json · NPM 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Specifics of npm's package.json handling">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="package-lock-json.html" />
+    
+    
+    <link rel="prev" href="npmrc.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    Commands
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../commands/npm-access.html">
+            
+                <a href="../commands/npm-access.html">
+            
+                    
+                    Npm Access
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../commands/npm-adduser.html">
+            
+                <a href="../commands/npm-adduser.html">
+            
+                    
+                    Npm Adduser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../commands/npm-audit.html">
+            
+                <a href="../commands/npm-audit.html">
+            
+                    
+                    Npm Audit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../commands/npm-bin.html">
+            
+                <a href="../commands/npm-bin.html">
+            
+                    
+                    Npm Bin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../commands/npm-bugs.html">
+            
+                <a href="../commands/npm-bugs.html">
+            
+                    
+                    Npm Bugs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="../commands/npm-cache.html">
+            
+                <a href="../commands/npm-cache.html">
+            
+                    
+                    Npm Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="../commands/npm-ci.html">
+            
+                <a href="../commands/npm-ci.html">
+            
+                    
+                    Npm Ci
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="../commands/npm-completion.html">
+            
+                <a href="../commands/npm-completion.html">
+            
+                    
+                    Npm Completion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="../commands/npm-config.html">
+            
+                <a href="../commands/npm-config.html">
+            
+                    
+                    Npm Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.10" data-path="../commands/npm-dedupe.html">
+            
+                <a href="../commands/npm-dedupe.html">
+            
+                    
+                    Npm Dedupe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.11" data-path="../commands/npm-deprecate.html">
+            
+                <a href="../commands/npm-deprecate.html">
+            
+                    
+                    Npm Deprecate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.12" data-path="../commands/npm-diff.html">
+            
+                <a href="../commands/npm-diff.html">
+            
+                    
+                    Npm Diff
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.13" data-path="../commands/npm-dist-tag.html">
+            
+                <a href="../commands/npm-dist-tag.html">
+            
+                    
+                    Npm Dist Tag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.14" data-path="../commands/npm-docs.html">
+            
+                <a href="../commands/npm-docs.html">
+            
+                    
+                    Npm Docs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.15" data-path="../commands/npm-doctor.html">
+            
+                <a href="../commands/npm-doctor.html">
+            
+                    
+                    Npm Doctor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.16" data-path="../commands/npm-edit.html">
+            
+                <a href="../commands/npm-edit.html">
+            
+                    
+                    Npm Edit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.17" data-path="../commands/npm-exec.html">
+            
+                <a href="../commands/npm-exec.html">
+            
+                    
+                    Npm Exec
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.18" data-path="../commands/npm-explain.html">
+            
+                <a href="../commands/npm-explain.html">
+            
+                    
+                    Npm Explain
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.19" data-path="../commands/npm-explore.html">
+            
+                <a href="../commands/npm-explore.html">
+            
+                    
+                    Npm Explore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.20" data-path="../commands/npm-find-dupes.html">
+            
+                <a href="../commands/npm-find-dupes.html">
+            
+                    
+                    Npm Find Dupes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.21" data-path="../commands/npm-fund.html">
+            
+                <a href="../commands/npm-fund.html">
+            
+                    
+                    Npm Fund
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.22" data-path="../commands/npm-help-search.html">
+            
+                <a href="../commands/npm-help-search.html">
+            
+                    
+                    Npm Help Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.23" data-path="../commands/npm-help.html">
+            
+                <a href="../commands/npm-help.html">
+            
+                    
+                    Npm Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.24" data-path="../commands/npm-hook.html">
+            
+                <a href="../commands/npm-hook.html">
+            
+                    
+                    Npm Hook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.25" data-path="../commands/npm-init.html">
+            
+                <a href="../commands/npm-init.html">
+            
+                    
+                    Npm Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.26" data-path="../commands/npm-install-ci-test.html">
+            
+                <a href="../commands/npm-install-ci-test.html">
+            
+                    
+                    Npm Install Ci Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.27" data-path="../commands/npm-install-test.html">
+            
+                <a href="../commands/npm-install-test.html">
+            
+                    
+                    Npm Install Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.28" data-path="../commands/npm-install.html">
+            
+                <a href="../commands/npm-install.html">
+            
+                    
+                    Npm Install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.29" data-path="../commands/npm-link.html">
+            
+                <a href="../commands/npm-link.html">
+            
+                    
+                    Npm Link
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.30" data-path="../commands/npm-logout.html">
+            
+                <a href="../commands/npm-logout.html">
+            
+                    
+                    Npm Logout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.31" data-path="../commands/npm-ls.html">
+            
+                <a href="../commands/npm-ls.html">
+            
+                    
+                    Npm Ls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.32" data-path="../commands/npm-org.html">
+            
+                <a href="../commands/npm-org.html">
+            
+                    
+                    Npm Org
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.33" data-path="../commands/npm-outdated.html">
+            
+                <a href="../commands/npm-outdated.html">
+            
+                    
+                    Npm Outdated
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.34" data-path="../commands/npm-owner.html">
+            
+                <a href="../commands/npm-owner.html">
+            
+                    
+                    Npm Owner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.35" data-path="../commands/npm-pack.html">
+            
+                <a href="../commands/npm-pack.html">
+            
+                    
+                    Npm Pack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.36" data-path="../commands/npm-ping.html">
+            
+                <a href="../commands/npm-ping.html">
+            
+                    
+                    Npm Ping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.37" data-path="../commands/npm-prefix.html">
+            
+                <a href="../commands/npm-prefix.html">
+            
+                    
+                    Npm Prefix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.38" data-path="../commands/npm-profile.html">
+            
+                <a href="../commands/npm-profile.html">
+            
+                    
+                    Npm Profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.39" data-path="../commands/npm-prune.html">
+            
+                <a href="../commands/npm-prune.html">
+            
+                    
+                    Npm Prune
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.40" data-path="../commands/npm-publish.html">
+            
+                <a href="../commands/npm-publish.html">
+            
+                    
+                    Npm Publish
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.41" data-path="../commands/npm-rebuild.html">
+            
+                <a href="../commands/npm-rebuild.html">
+            
+                    
+                    Npm Rebuild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.42" data-path="../commands/npm-repo.html">
+            
+                <a href="../commands/npm-repo.html">
+            
+                    
+                    Npm Repo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.43" data-path="../commands/npm-restart.html">
+            
+                <a href="../commands/npm-restart.html">
+            
+                    
+                    Npm Restart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.44" data-path="../commands/npm-root.html">
+            
+                <a href="../commands/npm-root.html">
+            
+                    
+                    Npm Root
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.45" data-path="../commands/npm-run-script.html">
+            
+                <a href="../commands/npm-run-script.html">
+            
+                    
+                    Npm Run Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.46" data-path="../commands/npm-search.html">
+            
+                <a href="../commands/npm-search.html">
+            
+                    
+                    Npm Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.47" data-path="../commands/npm-set-script.html">
+            
+                <a href="../commands/npm-set-script.html">
+            
+                    
+                    Npm Set Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.48" data-path="../commands/npm-shrinkwrap.html">
+            
+                <a href="../commands/npm-shrinkwrap.html">
+            
+                    
+                    Npm Shrinkwrap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.49" data-path="../commands/npm-star.html">
+            
+                <a href="../commands/npm-star.html">
+            
+                    
+                    Npm Star
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.50" data-path="../commands/npm-stars.html">
+            
+                <a href="../commands/npm-stars.html">
+            
+                    
+                    Npm Stars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.51" data-path="../commands/npm-start.html">
+            
+                <a href="../commands/npm-start.html">
+            
+                    
+                    Npm Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.52" data-path="../commands/npm-stop.html">
+            
+                <a href="../commands/npm-stop.html">
+            
+                    
+                    Npm Stop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.53" data-path="../commands/npm-team.html">
+            
+                <a href="../commands/npm-team.html">
+            
+                    
+                    Npm Team
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.54" data-path="../commands/npm-test.html">
+            
+                <a href="../commands/npm-test.html">
+            
+                    
+                    Npm Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.55" data-path="../commands/npm-token.html">
+            
+                <a href="../commands/npm-token.html">
+            
+                    
+                    Npm Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.56" data-path="../commands/npm-uninstall.html">
+            
+                <a href="../commands/npm-uninstall.html">
+            
+                    
+                    Npm Uninstall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.57" data-path="../commands/npm-unpublish.html">
+            
+                <a href="../commands/npm-unpublish.html">
+            
+                    
+                    Npm Unpublish
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.58" data-path="../commands/npm-unstar.html">
+            
+                <a href="../commands/npm-unstar.html">
+            
+                    
+                    Npm Unstar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.59" data-path="../commands/npm-update.html">
+            
+                <a href="../commands/npm-update.html">
+            
+                    
+                    Npm Update
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.60" data-path="../commands/npm-version.html">
+            
+                <a href="../commands/npm-version.html">
+            
+                    
+                    Npm Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.61" data-path="../commands/npm-view.html">
+            
+                <a href="../commands/npm-view.html">
+            
+                    
+                    Npm View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.62" data-path="../commands/npm-whoami.html">
+            
+                <a href="../commands/npm-whoami.html">
+            
+                    
+                    Npm Whoami
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.63" data-path="../commands/npm.html">
+            
+                <a href="../commands/npm.html">
+            
+                    
+                    Npm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.64" data-path="../commands/npx.html">
+            
+                <a href="../commands/npx.html">
+            
+                    
+                    Npx
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Configuring Npm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="folders.html">
+            
+                <a href="folders.html">
+            
+                    
+                    Folders
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                    Install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="npm-shrinkwrap-json.html">
+            
+                <a href="npm-shrinkwrap-json.html">
+            
+                    
+                    npm-shrinkwrap.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="npmrc.html">
+            
+                <a href="npmrc.html">
+            
+                    
+                    Npmrc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="package-json.html">
+            
+                <a href="package-json.html">
+            
+                    
+                    package.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="package-lock-json.html">
+            
+                <a href="package-lock-json.html">
+            
+                    
+                    package-lock.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Using Npm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../using-npm/config.html">
+            
+                <a href="../using-npm/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../using-npm/developers.html">
+            
+                <a href="../using-npm/developers.html">
+            
+                    
+                    Developers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../using-npm/orgs.html">
+            
+                <a href="../using-npm/orgs.html">
+            
+                    
+                    Orgs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../using-npm/registry.html">
+            
+                <a href="../using-npm/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../using-npm/removal.html">
+            
+                <a href="../using-npm/removal.html">
+            
+                    
+                    Removal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../using-npm/scope.html">
+            
+                <a href="../using-npm/scope.html">
+            
+                    
+                    Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../using-npm/scripts.html">
+            
+                <a href="../using-npm/scripts.html">
+            
+                    
+                    Scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../using-npm/workspaces.html">
+            
+                <a href="../using-npm/workspaces.html">
+            
+                    
+                    Workspaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    package.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >package.json</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="description">Description</h3>
+<p>This document is all you need to know about what&apos;s required in your
+package.json file.  It must be actual JSON, not just a JavaScript object
+literal.</p>
+<p>A lot of the behavior described in this document is affected by the config
+settings described in <a href="../using-npm/config"><code>config</code></a>.</p>
+<h3 id="name">name</h3>
+<p>If you plan to publish your package, the <em>most</em> important things in your
+package.json are the name and version fields as they will be required. The
+name and version together form an identifier that is assumed to be
+completely unique.  Changes to the package should come along with changes
+to the version. If you don&apos;t plan to publish your package, the name and
+version fields are optional.</p>
+<p>The name is what your thing is called.</p>
+<p>Some rules:</p>
+<ul>
+<li>The name must be less than or equal to 214 characters. This includes the
+scope for scoped packages.</li>
+<li>The names of scoped packages can begin with a dot or an underscore. This
+is not permitted without a scope.</li>
+<li>New packages must not have uppercase letters in the name.</li>
+<li>The name ends up being part of a URL, an argument on the command line,
+and a folder name. Therefore, the name can&apos;t contain any non-URL-safe
+characters.</li>
+</ul>
+<p>Some tips:</p>
+<ul>
+<li>Don&apos;t use the same name as a core Node module.</li>
+<li>Don&apos;t put &quot;js&quot; or &quot;node&quot; in the name.  It&apos;s assumed that it&apos;s js, since
+you&apos;re writing a package.json file, and you can specify the engine using
+the &quot;engines&quot; field.  (See below.)</li>
+<li>The name will probably be passed as an argument to require(), so it
+should be something short, but also reasonably descriptive.</li>
+<li>You may want to check the npm registry to see if there&apos;s something by
+that name already, before you get too attached to it.
+<a href="https://www.npmjs.com/" target="_blank">https://www.npmjs.com/</a></li>
+</ul>
+<p>A name can be optionally prefixed by a scope, e.g. <code>@myorg/mypackage</code>. See
+<a href="../using-npm/scope"><code>scope</code></a> for more detail.</p>
+<h3 id="version">version</h3>
+<p>If you plan to publish your package, the <em>most</em> important things in your
+package.json are the name and version fields as they will be required. The
+name and version together form an identifier that is assumed to be
+completely unique.  Changes to the package should come along with changes
+to the version. If you don&apos;t plan to publish your package, the name and
+version fields are optional.</p>
+<p>Version must be parseable by
+<a href="https://github.com/npm/node-semver" target="_blank">node-semver</a>, which is bundled with
+npm as a dependency.  (<code>npm install semver</code> to use it yourself.)</p>
+<h3 id="description">description</h3>
+<p>Put a description in it.  It&apos;s a string.  This helps people discover your
+package, as it&apos;s listed in <code>npm search</code>.</p>
+<h3 id="keywords">keywords</h3>
+<p>Put keywords in it.  It&apos;s an array of strings.  This helps people discover
+your package as it&apos;s listed in <code>npm search</code>.</p>
+<h3 id="homepage">homepage</h3>
+<p>The url to the project homepage.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token property">&quot;homepage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://github.com/owner/project#readme&quot;</span>
+</code></pre>
+<h3 id="bugs">bugs</h3>
+<p>The url to your project&apos;s issue tracker and / or the email address to which
+issues should be reported. These are helpful for people who encounter
+issues with your package.</p>
+<p>It should look like this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;url&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;https://github.com/owner/project/issues&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;email&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;project@hostname.com&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>You can specify either one or both values. If you want to provide only a
+url, you can specify the value for &quot;bugs&quot; as a simple string instead of an
+object.</p>
+<p>If a url is provided, it will be used by the <code>npm bugs</code> command.</p>
+<h3 id="license">license</h3>
+<p>You should specify a license for your package so that people know how they
+are permitted to use it, and any restrictions you&apos;re placing on it.</p>
+<p>If you&apos;re using a common license such as BSD-2-Clause or MIT, add a current
+SPDX license identifier for the license you&apos;re using, like this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;license&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;BSD-3-Clause&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>You can check <a href="https://spdx.org/licenses/" target="_blank">the full list of SPDX license
+IDs</a>.  Ideally you should pick one that is
+<a href="https://opensource.org/licenses/alphabetical" target="_blank">OSI</a> approved.</p>
+<p>If your package is licensed under multiple common licenses, use an <a href="https://www.npmjs.com/package/spdx" target="_blank">SPDX
+license expression syntax version 2.0
+string</a>, like this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;license&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;(ISC OR GPL-3.0)&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>If you are using a license that hasn&apos;t been assigned an SPDX identifier, or if
+you are using a custom license, use a string value like this one:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;license&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;SEE LICENSE IN &lt;filename&gt;&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Then include a file named <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filename</span><span class="token punctuation">&gt;</span></span></code> at the top level of the package.</p>
+<p>Some old packages used license objects or a &quot;licenses&quot; property containing
+an array of license objects:</p>
+<pre class="language-"><code class="lang-json"><span class="token comment">// Not valid metadata</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;license&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;https://opensource.org/licenses/ISC&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Not valid metadata</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;licenses&quot;</span> <span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MIT&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.opensource.org/licenses/mit-license.php&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Apache-2.0&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://opensource.org/licenses/apache2.0.php&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Those styles are now deprecated. Instead, use SPDX expressions, like this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;(MIT OR Apache-2.0)&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Finally, if you do not wish to grant others the right to use a private or
+unpublished package under any terms:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;UNLICENSED&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Consider also setting <code>&quot;private&quot;: true</code> to prevent accidental publication.</p>
+<h3 id="people-fields-author-contributors">people fields: author, contributors</h3>
+<p>The &quot;author&quot; is one person.  &quot;contributors&quot; is an array of people.  A
+&quot;person&quot; is an object with a &quot;name&quot; field and optionally &quot;url&quot; and &quot;email&quot;,
+like this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;Barney Rubble&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;email&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;b@rubble.com&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;url&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;http://barnyrubble.tumblr.com/&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Or you can shorten that all into a single string, and npm will parse it for
+you:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Barney Rubble &lt;b@rubble.com&gt; (http://barnyrubble.tumblr.com/)&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Both email and url are optional either way.</p>
+<p>npm also sets a top-level &quot;maintainers&quot; field with your npm user info.</p>
+<h3 id="funding">funding</h3>
+<p>You can specify an object containing an URL that provides up-to-date
+information about ways to help fund development of your package, or a
+string URL, or an array of these:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;funding&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;individual&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;http://example.com/donate&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token property">&quot;funding&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;patreon&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;https://www.patreon.com/my-account&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token property">&quot;funding&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://example.com/donate&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token property">&quot;funding&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;individual&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;http://example.com/donate&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;http://example.com/donateAlso&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;patreon&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;https://www.patreon.com/my-account&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Users can use the <code>npm fund</code> subcommand to list the <code>funding</code> URLs of all
+dependencies of their project, direct and indirect. A shortcut to visit
+each funding url is also available when providing the project name such as:
+<code>npm fund <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>projectname</span><span class="token punctuation">&gt;</span></span></code> (when there are multiple URLs, the first one will
+be visited)</p>
+<h3 id="files">files</h3>
+<p>The optional <code>files</code> field is an array of file patterns that describes the
+entries to be included when your package is installed as a dependency. File
+patterns follow a similar syntax to <code>.gitignore</code>, but reversed: including a
+file, directory, or glob pattern (<code>*</code>, <code>**/*</code>, and such) will make it so
+that file is included in the tarball when it&apos;s packed. Omitting the field
+will make it default to <code>[&quot;*&quot;]</code>, which means it will include all files.</p>
+<p>Some special files and directories are also included or excluded regardless
+of whether they exist in the <code>files</code> array (see below).</p>
+<p>You can also provide a <code>.npmignore</code> file in the root of your package or in
+subdirectories, which will keep files from being included. At the root of
+your package it will not override the &quot;files&quot; field, but in subdirectories
+it will. The <code>.npmignore</code> file works just like a <code>.gitignore</code>. If there is
+a <code>.gitignore</code> file, and <code>.npmignore</code> is missing, <code>.gitignore</code>&apos;s contents
+will be used instead.</p>
+<p>Files included with the &quot;package.json#files&quot; field <em>cannot</em> be excluded
+through <code>.npmignore</code> or <code>.gitignore</code>.</p>
+<p>Certain files are always included, regardless of settings:</p>
+<ul>
+<li><code>package.json</code></li>
+<li><code>README</code></li>
+<li><code>CHANGES</code> / <code>CHANGELOG</code> / <code>HISTORY</code></li>
+<li><code>LICENSE</code> / <code>LICENCE</code></li>
+<li><code>NOTICE</code></li>
+<li>The file in the &quot;main&quot; field</li>
+</ul>
+<p><code>README</code>, <code>CHANGES</code>, <code>LICENSE</code> &amp; <code>NOTICE</code> can have any case and extension.</p>
+<p>Conversely, some files are always ignored:</p>
+<ul>
+<li><code>.git</code></li>
+<li><code>CVS</code></li>
+<li><code>.svn</code></li>
+<li><code>.hg</code></li>
+<li><code>.lock-wscript</code></li>
+<li><code>.wafpickle-N</code></li>
+<li><code>.*.swp</code></li>
+<li><code>.DS_Store</code></li>
+<li><code>._*</code></li>
+<li><code>npm-debug.log</code></li>
+<li><code>.npmrc</code></li>
+<li><code>node_modules</code></li>
+<li><code>config.gypi</code></li>
+<li><code>*.orig</code></li>
+<li><code>package-lock.json</code> (use
+<a href="npm-shrinkwrap-json"><code>npm-shrinkwrap.json</code></a> if you wish
+it to be published)</li>
+</ul>
+<h3 id="main">main</h3>
+<p>The main field is a module ID that is the primary entry point to your
+program.  That is, if your package is named <code>foo</code>, and a user installs it,
+and then does <code>require(&quot;foo&quot;)</code>, then your main module&apos;s exports object will
+be returned.</p>
+<p>This should be a module relative to the root of your package folder.</p>
+<p>For most modules, it makes the most sense to have a main script and often
+not much else.</p>
+<p>If <code>main</code> is not set it defaults to <code>index.js</code> in the packages root folder.</p>
+<h3 id="browser">browser</h3>
+<p>If your module is meant to be used client-side the browser field should be
+used instead of the main field. This is helpful to hint users that it might
+rely on primitives that aren&apos;t available in Node.js modules. (e.g.
+<code>window</code>)</p>
+<h3 id="bin">bin</h3>
+<p>A lot of packages have one or more executable files that they&apos;d like to
+install into the PATH. npm makes this pretty easy (in fact, it uses this
+feature to install the &quot;npm&quot; executable.)</p>
+<p>To use this, supply a <code>bin</code> field in your package.json which is a map of
+command name to local file name. On install, npm will symlink that file
+into <code>prefix/bin</code> for global installs, or <code>./node_modules/.bin/</code> for local
+installs.</p>
+<p>For example, myapp could have this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;bin&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;myapp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./cli.js&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>So, when you install myapp, it&apos;ll create a symlink from the <code>cli.js</code> script
+to <code>/usr/local/bin/myapp</code>.</p>
+<p>If you have a single executable, and its name should be the name of the
+package, then you can just supply it as a string.  For example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;my-program&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.2.5&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./path/to/program&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>would be the same as this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;my-program&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.2.5&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bin&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;my-program&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./path/to/program&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Please make sure that your file(s) referenced in <code>bin</code> starts with
+<code>#!/usr/bin/env node</code>, otherwise the scripts are started without the node
+executable!</p>
+<p>Note that you can also set the executable files using <a href="#directoriesbin">directories.bin</a>.</p>
+<h3 id="man">man</h3>
+<p>Specify either a single file or an array of filenames to put in place for
+the <code>man</code> program to find.</p>
+<p>If only a single file is provided, then it&apos;s installed such that it is the
+result from <code>man <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pkgname</span><span class="token punctuation">&gt;</span></span></code>, regardless of its actual filename.  For
+example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.2.3&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A packaged foo fooer for fooing foos&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;foo.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;man&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./man/doc.1&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>would link the <code>./man/doc.1</code> file in such that it is the target for <code>man
+foo</code></p>
+<p>If the filename doesn&apos;t start with the package name, then it&apos;s prefixed.
+So, this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.2.3&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A packaged foo fooer for fooing foos&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;foo.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;man&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;./man/foo.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;./man/bar.1&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>will create files to do <code>man foo</code> and <code>man foo-bar</code>.</p>
+<p>Man files must end with a number, and optionally a <code>.gz</code> suffix if they are
+compressed.  The number dictates which man section the file is installed
+into.</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.2.3&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;A packaged foo fooer for fooing foos&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;foo.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;man&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;./man/foo.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;./man/foo.2&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>will create entries for <code>man foo</code> and <code>man 2 foo</code></p>
+<h3 id="directories">directories</h3>
+<p>The CommonJS <a href="http://wiki.commonjs.org/wiki/Packages/1.0" target="_blank">Packages</a> spec
+details a few ways that you can indicate the structure of your package
+using a <code>directories</code> object. If you look at <a href="https://registry.npmjs.org/npm/latest" target="_blank">npm&apos;s
+package.json</a>, you&apos;ll see that it
+has directories for doc, lib, and man.</p>
+<p>In the future, this information may be used in other creative ways.</p>
+<h4 id="directoriesbin">directories.bin</h4>
+<p>If you specify a <code>bin</code> directory in <code>directories.bin</code>, all the files in
+that folder will be added.</p>
+<p>Because of the way the <code>bin</code> directive works, specifying both a <code>bin</code> path
+and setting <code>directories.bin</code> is an error. If you want to specify
+individual files, use <code>bin</code>, and for all the files in an existing <code>bin</code>
+directory, use <code>directories.bin</code>.</p>
+<h4 id="directoriesman">directories.man</h4>
+<p>A folder that is full of man pages.  Sugar to generate a &quot;man&quot; array by
+walking the folder.</p>
+<h3 id="repository">repository</h3>
+<p>Specify the place where your code lives. This is helpful for people who
+want to contribute.  If the git repo is on GitHub, then the <code>npm docs</code>
+command will be able to find you.</p>
+<p>Do it like this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;repository&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;git&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://github.com/npm/cli.git&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The URL should be a publicly available (perhaps read-only) url that can be
+handed directly to a VCS program without any modification.  It should not
+be a url to an html project page that you put in your browser.  It&apos;s for
+computers.</p>
+<p>For GitHub, GitHub gist, Bitbucket, or GitLab repositories you can use the
+same shortcut syntax you use for <code>npm install</code>:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;repository&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm/npm&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token property">&quot;repository&quot;</span><span class="token operator">:</span> <span class="token string">&quot;github:user/repo&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token property">&quot;repository&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gist:11081aaa281&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token property">&quot;repository&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bitbucket:user/repo&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token property">&quot;repository&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gitlab:user/repo&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>If the <code>package.json</code> for your package is not in the root directory (for
+example if it is part of a monorepo), you can specify the directory in
+which it lives:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;repository&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;git&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://github.com/facebook/react.git&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;directory&quot;</span><span class="token operator">:</span> <span class="token string">&quot;packages/react-dom&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="scripts">scripts</h3>
+<p>The &quot;scripts&quot; property is a dictionary containing script commands that are
+run at various times in the lifecycle of your package.  The key is the
+lifecycle event, and the value is the command to run at that point.</p>
+<p>See <a href="../using-npm/scripts"><code>scripts</code></a> to find out more about writing package
+scripts.</p>
+<h3 id="config">config</h3>
+<p>A &quot;config&quot; object can be used to set configuration parameters used in
+package scripts that persist across upgrades.  For instance, if a package
+had the following:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;config&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;8080&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>and then had a &quot;start&quot; command that then referenced the
+<code>npm_package_config_port</code> environment variable, then the user could
+override that by doing <code>npm config set foo:port 8001</code>.</p>
+<p>See <a href="../using-npm/config"><code>config</code></a> and <a href="../using-npm/scripts"><code>scripts</code></a> for
+more on package configs.</p>
+<h3 id="dependencies">dependencies</h3>
+<p>Dependencies are specified in a simple object that maps a package name to a
+version range. The version range is a string which has one or more
+space-separated descriptors.  Dependencies can also be identified with a
+tarball or git URL.</p>
+<p><strong>Please do not put test harnesses or transpilers or other &quot;development&quot;
+time tools in your <code>dependencies</code> object.</strong>  See <code>devDependencies</code>, below.</p>
+<p>See <a href="https://github.com/npm/node-semver#versions" target="_blank">semver</a> for more details about specifying version ranges.</p>
+<ul>
+<li><code>version</code> Must match <code>version</code> exactly</li>
+<li><code>&gt;version</code> Must be greater than <code>version</code></li>
+<li><code>&gt;=version</code> etc</li>
+<li><code>&lt;version</code></li>
+<li><code>&lt;=version</code></li>
+<li><code>~version</code> &quot;Approximately equivalent to version&quot;  See
+<a href="https://github.com/npm/node-semver#versions" target="_blank">semver</a></li>
+<li><code>^version</code> &quot;Compatible with version&quot;  See <a href="https://github.com/npm/node-semver#versions" target="_blank">semver</a></li>
+<li><code>1.2.x</code> 1.2.0, 1.2.1, etc., but not 1.3.0</li>
+<li><code>http://...</code> See &apos;URLs as Dependencies&apos; below</li>
+<li><code>*</code> Matches any version</li>
+<li><code>&quot;&quot;</code> (just an empty string) Same as <code>*</code></li>
+<li><code>version1 - version2</code> Same as <code>&gt;=version1 &lt;=version2</code>.</li>
+<li><code>range1 || range2</code> Passes if either range1 or range2 are satisfied.</li>
+<li><code>git...</code> See &apos;Git URLs as Dependencies&apos; below</li>
+<li><code>user/repo</code> See &apos;GitHub URLs&apos; below</li>
+<li><code>tag</code> A specific version tagged and published as <code>tag</code>  See <a href="../commands/npm-dist-tag"><code>npm
+dist-tag</code></a></li>
+<li><code>path/path/path</code> See <a href="#local-paths">Local Paths</a> below</li>
+</ul>
+<p>For example, these are all valid:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;foo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0 - 2.9999.9999&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;bar&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&gt;=1.0.2 &lt;2.1.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;baz&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&gt;1.0.2 &lt;=2.3.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;boo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;qux&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&lt;1.0.0 || &gt;=2.3.1 &lt;2.4.5 || &gt;=2.5.2 &lt;3.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;asd&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://asdf.com/asdf.tar.gz&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;til&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~1.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;elf&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~1.2.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;two&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.x&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;thr&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3.3.x&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lat&quot;</span><span class="token operator">:</span> <span class="token string">&quot;latest&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;dyl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;file:../dyl&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="urls-as-dependencies">URLs as Dependencies</h4>
+<p>You may specify a tarball URL in place of a version range.</p>
+<p>This tarball will be downloaded and installed locally to your package at
+install time.</p>
+<h4 id="git-urls-as-dependencies">Git URLs as Dependencies</h4>
+<p>Git urls are of the form:</p>
+<pre class="language-"><code class="lang-bash"><span class="token operator">&lt;</span>protocol<span class="token operator">&gt;</span>://<span class="token punctuation">[</span><span class="token operator">&lt;</span>user<span class="token operator">&gt;</span><span class="token punctuation">[</span>:<span class="token operator">&lt;</span>password<span class="token operator">&gt;</span><span class="token punctuation">]</span>@<span class="token punctuation">]</span><span class="token operator">&lt;</span>hostname<span class="token operator">&gt;</span><span class="token punctuation">[</span>:<span class="token operator">&lt;</span>port<span class="token operator">&gt;</span><span class="token punctuation">]</span><span class="token punctuation">[</span>:<span class="token punctuation">]</span><span class="token punctuation">[</span>/<span class="token punctuation">]</span><span class="token operator">&lt;</span>path<span class="token operator">&gt;</span><span class="token punctuation">[</span><span class="token comment">#&lt;commit-ish&gt; | #semver:&lt;semver&gt;]</span>
+</code></pre>
+<p><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>protocol</span><span class="token punctuation">&gt;</span></span></code> is one of <code>git</code>, <code>git+ssh</code>, <code>git+http</code>, <code>git+https</code>, or
+<code>git+file</code>.</p>
+<p>If <code>#<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>commit-ish</span><span class="token punctuation">&gt;</span></span></code> is provided, it will be used to clone exactly that
+commit. If the commit-ish has the format <code>#semver:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>semver</span><span class="token punctuation">&gt;</span></span></code>, <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>semver</span><span class="token punctuation">&gt;</span></span></code> can
+be any valid semver range or exact version, and npm will look for any tags
+or refs matching that range in the remote repository, much as it would for
+a registry dependency. If neither <code>#<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>commit-ish</span><span class="token punctuation">&gt;</span></span></code> or <code>#semver:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>semver</span><span class="token punctuation">&gt;</span></span></code> is
+specified, then <code>master</code> is used.</p>
+<p>Examples:</p>
+<pre class="language-"><code class="lang-bash">git+ssh://git@github.com:npm/cli.git<span class="token comment">#v1.0.27</span>
+git+ssh://git@github.com:npm/cli<span class="token comment">#semver:^5.0</span>
+git+https://isaacs@github.com/npm/cli.git
+git://github.com/npm/cli.git<span class="token comment">#v1.0.27</span>
+</code></pre>
+<h4 id="github-urls">GitHub URLs</h4>
+<p>As of version 1.1.65, you can refer to GitHub urls as just &quot;foo&quot;:
+&quot;user/foo-project&quot;.  Just as with git URLs, a <code>commit-ish</code> suffix can be
+included.  For example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;express&quot;</span><span class="token operator">:</span> <span class="token string">&quot;expressjs/express&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mocha&quot;</span><span class="token operator">:</span> <span class="token string">&quot;mochajs/mocha#4727d357ea&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;user/repo#feature\/branch&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="local-paths">Local Paths</h4>
+<p>As of version 2.0.0 you can provide a path to a local directory that
+contains a package. Local paths can be saved using <code>npm install -S</code> or <code>npm
+install --save</code>, using any of these forms:</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">..</span>/foo/bar
+~/foo/bar
+./foo/bar
+/foo/bar
+</code></pre>
+<p>in which case they will be normalized to a relative path and added to your
+<code>package.json</code>. For example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;baz&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;bar&quot;</span><span class="token operator">:</span> <span class="token string">&quot;file:../foo/bar&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>This feature is helpful for local offline development and creating tests
+that require npm installing where you don&apos;t want to hit an external server,
+but should not be used when publishing packages to the public registry.</p>
+<h3 id="devdependencies">devDependencies</h3>
+<p>If someone is planning on downloading and using your module in their
+program, then they probably don&apos;t want or need to download and build the
+external test or documentation framework that you use.</p>
+<p>In this case, it&apos;s best to map these additional items in a
+<code>devDependencies</code> object.</p>
+<p>These things will be installed when doing <code>npm link</code> or <code>npm install</code> from
+the root of a package, and can be managed like any other npm configuration
+param.  See <a href="../using-npm/config"><code>config</code></a> for more on the topic.</p>
+<p>For build steps that are not platform-specific, such as compiling
+CoffeeScript or other languages to JavaScript, use the <code>prepare</code> script to
+do this, and make the required package a devDependency.</p>
+<p>For example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ethopia-waza&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;a delightfully fruity coffee varietal&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.2.3&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;coffee-script&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~1.6.3&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;prepare&quot;</span><span class="token operator">:</span> <span class="token string">&quot;coffee -o lib/ -c src/waza.coffee&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lib/waza.js&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The <code>prepare</code> script will be run before publishing, so that users can
+consume the functionality without requiring them to compile it themselves.
+In dev mode (ie, locally running <code>npm install</code>), it&apos;ll run this script as
+well, so that you can test it easily.</p>
+<h3 id="peerdependencies">peerDependencies</h3>
+<p>In some cases, you want to express the compatibility of your package with a
+host tool or library, while not necessarily doing a <code>require</code> of this host.
+This is usually referred to as a <em>plugin</em>. Notably, your module may be
+exposing a specific interface, expected and specified by the host
+documentation.</p>
+<p>For example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tea-latte&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.3.5&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;peerDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;tea&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.x&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>This ensures your package <code>tea-latte</code> can be installed <em>along</em> with the
+second major version of the host package <code>tea</code> only. <code>npm install
+tea-latte</code> could possibly yield the following dependency graph:</p>
+<pre class="language-"><code class="lang-bash">&#x251C;&#x2500;&#x2500; tea-latte@1.3.5
+&#x2514;&#x2500;&#x2500; tea@2.2.0
+</code></pre>
+<p>In npm versions 3 through 6, <code>peerDependencies</code> were not automatically
+installed, and would raise a warning if an invalid version of the peer
+dependency was found in the tree.  As of npm v7, peerDependencies <em>are</em>
+installed by default.</p>
+<p>Trying to install another plugin with a conflicting requirement may cause
+an error if the tree cannot be resolved correctly. For this reason, make
+sure your plugin requirement is as broad as possible, and not to lock it
+down to specific patch versions.</p>
+<p>Assuming the host complies with <a href="https://semver.org/" target="_blank">semver</a>, only changes
+in the host package&apos;s major version will break your plugin. Thus, if you&apos;ve
+worked with every 1.x version of the host package, use <code>&quot;^1.0&quot;</code> or <code>&quot;1.x&quot;</code>
+to express this. If you depend on features introduced in 1.5.2, use
+<code>&quot;^1.5.2&quot;</code>.</p>
+<h3 id="peerdependenciesmeta">peerDependenciesMeta</h3>
+<p>When a user installs your package, npm will emit warnings if packages
+specified in <code>peerDependencies</code> are not already installed. The
+<code>peerDependenciesMeta</code> field serves to provide npm more information on how
+your peer dependencies are to be used. Specifically, it allows peer
+dependencies to be marked as optional.</p>
+<p>For example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tea-latte&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.3.5&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;peerDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;tea&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.x&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;soy-milk&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.2&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;peerDependenciesMeta&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;soy-milk&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;optional&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Marking a peer dependency as optional ensures npm will not emit a warning
+if the <code>soy-milk</code> package is not installed on the host. This allows you to
+integrate and interact with a variety of host packages without requiring
+all of them to be installed.</p>
+<h3 id="bundleddependencies">bundledDependencies</h3>
+<p>This defines an array of package names that will be bundled when publishing
+the package.</p>
+<p>In cases where you need to preserve npm packages locally or have them
+available through a single file download, you can bundle the packages in a
+tarball file by specifying the package names in the <code>bundledDependencies</code>
+array and executing <code>npm pack</code>.</p>
+<p>For example:</p>
+<p>If we define a package.json like this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;awesome-web-framework&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bundledDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;renderized&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;super-streams&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>we can obtain <code>awesome-web-framework-1.0.0.tgz</code> file by running <code>npm pack</code>.
+This file contains the dependencies <code>renderized</code> and <code>super-streams</code> which
+can be installed in a new project by executing <code>npm install
+awesome-web-framework-1.0.0.tgz</code>.  Note that the package names do not
+include any versions, as that information is specified in <code>dependencies</code>.</p>
+<p>If this is spelled <code>&quot;bundleDependencies&quot;</code>, then that is also honored.</p>
+<h3 id="optionaldependencies">optionalDependencies</h3>
+<p>If a dependency can be used, but you would like npm to proceed if it cannot
+be found or fails to install, then you may put it in the
+<code>optionalDependencies</code> object.  This is a map of package name to version or
+url, just like the <code>dependencies</code> object.  The difference is that build
+failures do not cause installation to fail.  Running <code>npm install
+--no-optional</code> will prevent these dependencies from being installed.</p>
+<p>It is still your program&apos;s responsibility to handle the lack of the
+dependency.  For example, something like this:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">try</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">)</span>
+  <span class="token keyword">var</span> fooVersion <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;foo/package.json&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>version
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>er<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  foo <span class="token operator">=</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span> <span class="token function">notGoodFooVersion</span><span class="token punctuation">(</span>fooVersion<span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  foo <span class="token operator">=</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// .. then later in your program ..</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>foo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  foo<span class="token punctuation">.</span><span class="token function">doFooThings</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Entries in <code>optionalDependencies</code> will override entries of the same name in
+<code>dependencies</code>, so it&apos;s usually best to only put in one place.</p>
+<h3 id="engines">engines</h3>
+<p>You can specify the version of node that your stuff works on:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;engines&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&gt;=0.10.3 &lt;15&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>And, like with dependencies, if you don&apos;t specify the version (or if you
+specify &quot;*&quot; as the version), then any version of node will do.</p>
+<p>You can also use the &quot;engines&quot; field to specify which versions of npm are
+capable of properly installing your program.  For example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;engines&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;npm&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~1.0.20&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Unless the user has set the <code>engine-strict</code> config flag, this field is
+advisory only and will only produce warnings when your package is installed
+as a dependency.</p>
+<h3 id="os">os</h3>
+<p>You can specify which operating systems your
+module will run on:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;darwin&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;linux&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>You can also block instead of allowing operating systems, just prepend the
+blocked os with a &apos;!&apos;:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;!win32&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The host operating system is determined by <code>process.platform</code></p>
+<p>It is allowed to both block and allow an item, although there isn&apos;t any
+good reason to do this.</p>
+<h3 id="cpu">cpu</h3>
+<p>If your code only runs on certain cpu architectures,
+you can specify which ones.</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;cpu&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;x64&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;ia32&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Like the <code>os</code> option, you can also block architectures:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;cpu&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;!arm&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;!mips&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The host architecture is determined by <code>process.arch</code></p>
+<h3 id="private">private</h3>
+<p>If you set <code>&quot;private&quot;: true</code> in your package.json, then npm will refuse to
+publish it.</p>
+<p>This is a way to prevent accidental publication of private repositories.
+If you would like to ensure that a given package is only ever published to
+a specific registry (for example, an internal registry), then use the
+<code>publishConfig</code> dictionary described below to override the <code>registry</code>
+config param at publish-time.</p>
+<h3 id="publishconfig">publishConfig</h3>
+<p>This is a set of config values that will be used at publish-time. It&apos;s
+especially handy if you want to set the tag, registry or access, so that
+you can ensure that a given package is not tagged with &quot;latest&quot;, published
+to the global public registry or that a scoped module is private by
+default.</p>
+<p>See <a href="../using-npm/config"><code>config</code></a> to see the list of config options that
+can be overridden.</p>
+<h3 id="workspaces">workspaces</h3>
+<p>The optional <code>workspaces</code> field is an array of file patterns that describes
+locations within the local file system that the install client should look
+up to find each <a href="../using-npm/workspaces">workspace</a> that needs to be
+symlinked to the top level <code>node_modules</code> folder.</p>
+<p>It can describe either the direct paths of the folders to be used as
+workspaces or it can define globs that will resolve to these same folders.</p>
+<p>In the following example, all folders located inside the folder
+<code>./packages</code> will be treated as workspaces as long as they have valid
+<code>package.json</code> files inside them:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;workspace-example&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;workspaces&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;./packages/*&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>See <a href="../using-npm/workspaces"><code>workspaces</code></a> for more examples.</p>
+<h3 id="default-values">DEFAULT VALUES</h3>
+<p>npm will default some values based on package contents.</p>
+<ul>
+<li><p><code>&quot;scripts&quot;: {&quot;start&quot;: &quot;node server.js&quot;}</code></p>
+<p>If there is a <code>server.js</code> file in the root of your package, then npm will
+default the <code>start</code> command to <code>node server.js</code>.</p>
+</li>
+<li><p><code>&quot;scripts&quot;:{&quot;install&quot;: &quot;node-gyp rebuild&quot;}</code></p>
+<p>If there is a <code>binding.gyp</code> file in the root of your package and you have
+not defined an <code>install</code> or <code>preinstall</code> script, npm will default the
+<code>install</code> command to compile using node-gyp.</p>
+</li>
+<li><p><code>&quot;contributors&quot;: [...]</code></p>
+<p>If there is an <code>AUTHORS</code> file in the root of your package, npm will treat
+each line as a <code>Name <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>email</span><span class="token punctuation">&gt;</span></span> (url)</code> format, where email and url are
+optional.  Lines which start with a <code>#</code> or are blank, will be ignored.</p>
+</li>
+</ul>
+<h3 id="see-also">SEE ALSO</h3>
+<ul>
+<li><a href="https://github.com/npm/node-semver#versions" target="_blank">semver</a></li>
+<li><a href="../using-npm/workspaces">workspaces</a></li>
+<li><a href="../commands/npm-init">npm init</a></li>
+<li><a href="../commands/npm-version">npm version</a></li>
+<li><a href="../commands/npm-config">npm config</a></li>
+<li><a href="../commands/npm-help">npm help</a></li>
+<li><a href="../commands/npm-install">npm install</a></li>
+<li><a href="../commands/npm-publish">npm publish</a></li>
+<li><a href="../commands/npm-uninstall">npm uninstall</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="npmrc.html" class="navigation navigation-prev " aria-label="Previous page: Npmrc">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="package-lock-json.html" class="navigation navigation-next " aria-label="Next page: package-lock.json">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"package.json","section":5,"description":"Specifics of npm's package.json handling","level":"1.2.5","depth":2,"next":{"title":"package-lock.json","level":"1.2.6","depth":2,"path":"configuring-npm/package-lock-json.md","ref":"configuring-npm/package-lock-json.md","articles":[]},"previous":{"title":"Npmrc","level":"1.2.4","depth":2,"path":"configuring-npm/npmrc.md","ref":"configuring-npm/npmrc.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"NPM 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"configuring-npm/package-json.md","mtime":"2021-05-14T01:08:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-14T01:09:26.705Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
